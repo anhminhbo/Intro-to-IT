@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bouncing Ball</title>
+    <style>
+      canvas {
+        float: left;
+      }
+      div {
+        /* border: 1px solid black; */
+        margin-left: 811px;
+      }
+    </style>
   </head>
   <body>
     <canvas id="gameScreen" width="800" height="800"></canvas>
     <script type="text/javascript" src="../../js/screen/screen.js"></script>
     <script type="text/javascript" src="../../js/paddle/paddle.js"></script>
     <script type="text/javascript" src="../../js/game/game.js"></script>
-    <h3>Instruction:</h3>
-    <p>press &rarr; on your keyboard to make paddle go right.</p>
-    <p>press &larr; on your keyboard to make paddle go left.</p>
+    <div class="instruction">
+      <h3>Instruction:</h3>
+      <p>press &rarr; on your keyboard to make paddle go right.</p>
+      <p>press &larr; on your keyboard to make paddle go left.</p>
+    </div>
   </body>
 </html>
