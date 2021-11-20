@@ -12,4 +12,5 @@ cvs.style.border = "1px solid #0ff";
 
 // Load Background img
 const BG_IMG = new Image();
-BG_IMG.src = "../../img/game/bg_600x800.jpg";
+BG_IMG.src = "../../img/game/bg-christmas_800x800.jpg";
+
