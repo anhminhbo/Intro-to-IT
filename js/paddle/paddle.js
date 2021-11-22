@@ -2,9 +2,9 @@
 const PADDLE_WIDTH = 150;
 const PADDLE_HEIGHT = 40;
 const PADDLE_MARGIN_BOTTOM = 50; // difference from paddle to bottom of game screen
-const PADDLE_SPEED = 7;
+const PADDLE_SPEED = 20;
 
-// Initialize right and left arrow to check user input
+// Initialize right and left arrow to check user control over paddle
 var rightArrow = false;
 var leftArrow = false;
 
@@ -34,12 +34,12 @@ class Rectangular {
     else {
       // Fill color inside rectangular
       ctx.fillStyle = "#2e3548";
-      ctx.fillRect(Paddle.x, Paddle.y, Paddle.width, Paddle.height);
+      ctx.fillRect(this.x, this.y, this.width, this.height);
 
       // Fill the border of the rectangular
       ctx.lineWidth = 5; // make it thicker
       ctx.strokeStyle = "#ffcd05"; //color
-      ctx.strokeRect(Paddle.x, Paddle.y, Paddle.width, Paddle.height); //make border around shape
+      ctx.strokeRect(this.x, this.y, this.width, this.height); //make border around shape
     }
   }
 
@@ -47,7 +47,7 @@ class Rectangular {
   updatePosition() {
     // whenever rightArrow true -> move the rectangular to the right
     // handle case when rectangular reach the right screen
-    if (rightArrow && this.x + this.width < cvs.width) Paddle.x += Paddle.speed;
+    if (rightArrow && this.x + this.width < cvs.width) this.x += this.speed;
 
     // whenever leftArrow true -> move the rectangular to the left
     // handle case when rectangular reach the left screen
@@ -55,6 +55,7 @@ class Rectangular {
   }
 }
 
+// Initialize Paddle obj
 const Paddle = new Rectangular(
   cvs.width / 2 - PADDLE_WIDTH / 2,
   cvs.height - PADDLE_HEIGHT - PADDLE_MARGIN_BOTTOM,
