@@ -6,6 +6,9 @@ const Point = document.getElementById("point");
 // Game Loop
 const gameLoop = () => {
   // Render the bg screen whenever the game animation restart and update
+  // update game level
+  updateGameLevel();
+
   // Clear the screen
   ctx.clearRect(0, 0, cvs.width, cvs.height);
 
@@ -17,9 +20,6 @@ const gameLoop = () => {
 
   // update Obj Position
   gameUpdateObjPosition();
-
-  // update game level
-  updateGameLevel();
 
   // Create game loop if the game is not over
   if (!gameOver) requestAnimationFrame(gameLoop);
@@ -86,13 +86,13 @@ const updateGameLevel = () => {
 
   // Level 5
   if (point > 50 && point <= 60) {
-    Paddle.speed = 5;
+    Paddle.speed = 7;
     Ball.speed = 15;
   }
 
   // Level 6
   if (point > 60) {
-    Paddle.speed = 2;
+    Paddle.speed = 5;
     Ball.speed = 17;
   }
 };

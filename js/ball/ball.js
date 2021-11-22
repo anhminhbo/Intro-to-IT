@@ -46,8 +46,8 @@ const Ball = new Circle(
   Paddle.y - BALL_RADIUS, // Paddle y is constant so we use it to fast calculate
   BALL_RADIUS,
   BALL_SPEED,
-  5 * (Math.random() * 2 - 1), //random movement of Ball at the beginning
-  -5 // to always go above at the beginning
+  BALL_SPEED * (Math.random() * 2 - 1), //random movement of Ball at the beginning
+  -BALL_SPEED // to always go above at the beginning
 );
 
 // Ball movement when collide with Wall
