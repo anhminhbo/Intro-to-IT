@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    color: coral;
+}
+ul.tab{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+}
+p.tab{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+p{
+    text-align: justify;
+}
