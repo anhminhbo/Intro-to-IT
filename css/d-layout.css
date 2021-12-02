@@ -1,0 +1,18 @@
+/* Doanh's layout demo*/
+h1,h2,body{margin:0;}
+h1{
+    /* border: 1px solid red; */
+    font-family: "Red Hat Display";
+    font-size: 30px;
+    color: rgb(100, 56, 19);
+    text-align: center;
+    padding: 10px 20px;
+}
+
+body{
+    /* border: 1px solid red; */
+    /* margin-bottom: 100px; */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    color: black;
+}
