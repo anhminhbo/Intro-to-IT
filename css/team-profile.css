@@ -1,0 +1,47 @@
+body{
+    margin: 5vw;
+}
+#heading{
+    text-align: center;
+    font-size: 30px;
+    color: coral;
+}
+#heading2{
+    font-size: 20px;
+    color: coral;
+}
+#subh{
+    /* margin-top: 7px;
+    margin-left: 100px; */
+    display: inline-block;
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding: 0px 0px 0px 35px;
+}
+#pr1{
+    margin: 10px 40px 10px 20px;
+    text-align: justify;
+}
+.geninfo{
+    margin: 10px auto;
+    font-weight: bold;
+}
+.email{
+    font-weight: normal;
+}
+.email:link{
+    color: coral
+}
+.email:hover{
+    color: lightgreen
+}
+.perinfo{
+    margin: 10px 40px 10px 0px;
+    text-align: justify;
+}
