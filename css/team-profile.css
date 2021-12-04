@@ -3,10 +3,12 @@ body{
 }
 #heading{
     text-align: center;
+    font-weight: bold;
     font-size: 30px;
     color: coral;
 }
 #heading2{
+    font-weight: bold;
     font-size: 20px;
     color: coral;
 }
@@ -14,6 +16,7 @@ body{
     /* margin-top: 7px;
     margin-left: 100px; */
     display: inline-block;
+    font-weight: normal;
     font-size: 18px;
     font-style: italic;
     color: black;
@@ -25,7 +28,7 @@ ul{
     padding: 0px 0px 0px 35px;
 }
 #pr1{
-    margin: 10px 40px 10px 20px;
+    margin: 10px 40px 10px 35px;
     text-align: justify;
 }
 .geninfo{
@@ -34,6 +37,7 @@ ul{
 }
 .email{
     font-weight: normal;
+    cursor: pointer;
 }
 .email:link{
     color: coral
