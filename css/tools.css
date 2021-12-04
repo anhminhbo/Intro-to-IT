@@ -1,0 +1,12 @@
+/* Tools css */
+h1 {
+  text-align: center;
+  color: orange;
+  /* background-color: black; */
+}
+
+p {
+    text-align: justify;
+    padding-left: 10px;
+}
+
