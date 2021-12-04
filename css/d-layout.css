@@ -1,18 +1,39 @@
 /* Doanh's layout demo*/
-h1,h2,body{margin:0;}
-h1{
-    /* border: 1px solid red; */
+h1,h2,body{
     font-family: "Red Hat Display";
+    margin:0;
+}
+h1{
+    border: 1px solid red;
     font-size: 30px;
     color: rgb(100, 56, 19);
     text-align: center;
     padding: 10px 20px;
 }
 
-body{
-    /* border: 1px solid red; */
+text{
+    border: 1px solid red;
     /* margin-bottom: 100px; */
-    font-family: "Red Hat Display";
+
     font-size: 16px;
     color: black;
 }
+menu_bar{
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+button{
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+
