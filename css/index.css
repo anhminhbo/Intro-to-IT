@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar-container {
+  height: 100%;
+  flex: 1;
+  margin-left: 10px;
+}
+
+#sidebar-container a {
+  text-decoration: none;
+}
+
+/* space between each element on nav bar */
+#sidebar-container div + div {
+  margin-top: 10px;
+}
+
+/* space from header to tags */
+#sidebar-container .sidebar-header  {
+    margin-bottom: 100px;
+    font-size: 28px;
+}
+
+/* color for the sidebar header */
+#sidebar-container .sidebar-header  a {
+    color:red;
+}
+
+/* Content */
+
+#content {
+  height: 100%;
+  flex: 10;
+  text-align: justify;
+  overflow: auto;
+}
+
+#content header h1 {
+  margin-top: 0;
+  text-align: center;
+}
