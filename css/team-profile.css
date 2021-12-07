@@ -1,7 +1,5 @@
-body{
-    margin: 5vw;
+#content{
     font-family: 'Markazi Text', serif;
-    font-size: 20px;
 }
 #heading{
     text-align: center;
@@ -11,13 +9,14 @@ body{
 }
 #heading2{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
     color: coral;
+    text-align: left;
 }
 #subh{
     display: inline-block;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 30px;
     font-style: italic;
     color: black;
 }
@@ -29,14 +28,17 @@ ul{
 }
 #pr1{
     margin: 10px 40px 10px 35px;
+    font-size: 19px;
     text-align: justify;
 }
 .geninfo{
     margin: 10px auto;
+    font-size: 19px;
     font-weight: bold;
 }
 .email{
     font-weight: normal;
+    font-size: 19px;
     cursor: pointer;
 }
 .email:link{
@@ -47,5 +49,6 @@ ul{
 }
 .perinfo{
     margin: 10px 40px 10px 0px;
+    font-size: 19px;
     text-align: justify;
 }
