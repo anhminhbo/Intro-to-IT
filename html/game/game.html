@@ -1,36 +1,77 @@
 <!-- Game page -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bouncing Ball</title>
-    <style>
-      canvas {
-        float: left;
-      }
-      div {
-        /* border: 1px solid black; */
-        margin-left: 811px;
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bouncing Ball</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/game.css" />
+
+  <link rel="stylesheet" href="../../css/index.css" />
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside id="sidebar-container">
+    <div class="sidebar-header">
+      <a href="../../index.html">MKDK</a>
+    </div>
+
+    <div class="sidebar-item">
+      <a href="../../index.html">Home</a>
+    </div>
+
+    <div class="sidebar-item">
+      <a href="../asm-section/team-profile.html">Team Profile</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/tools.html">Tools</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/it-work.html">IT Work</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/it-tech.html">IT Technology</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/project-ideas.html">Project Ideas</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/feedback.html">Feedbacks</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="../asm-section/reference.html">References</a>
+    </div>
+    <div class="sidebar-item">
+      <a href="#">Game</a>
+    </div>
+  </aside>
+
+  <!-- Content -->
+  <!-- put the content of the document here -->
+  <section id="content">
     <canvas id="gameScreen" width="800" height="800"></canvas>
     <script type="text/javascript" src="../../js/screen/screen.js"></script>
     <script type="text/javascript" src="../../js/paddle/paddle.js"></script>
     <script type="text/javascript" src="../../js/ball/ball.js"></script>
-    <div class="instruction">
+    <div id="instruction">
       <h2>Bouncing Pong</h3>
-      <p> You get 1 point with each bounce, you lost when drop the ball.</p>
-      <p> The game difficulty will increase by 1 if it sees that you're so PRO, maximum 6 levels.</p>
-      <p> Good luck and Happy Bouncing !!</p>
-      <h3>Instruction:</h3>
-      <p>press &rarr; on your keyboard to make paddle go right.</p>
-      <p>press &larr; on your keyboard to make paddle go left.</p>
-      <h3 id="point">Point : 0</h3>
+        <p> You get 1 point with each bounce, you lost when drop the ball.</p>
+        <p> The game difficulty will increase by 1 if it sees that you're so PRO, maximum 6 levels.</p>
+        <p> Good luck and Happy Bouncing !!</p>
+        <h3>Instruction:</h3>
+        <p>press &rarr; on your keyboard to make paddle go right.</p>
+        <p>press &larr; on your keyboard to make paddle go left.</p>
+        <h3 id="point">Point : 0</h3>
     </div>
     <script type="text/javascript" src="../../js/game/game.js"></script>
-  </body>
+  </section>
+</body>
+
 </html>

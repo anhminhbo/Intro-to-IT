@@ -1,0 +1,54 @@
+#content{
+    font-family: 'Markazi Text', serif;
+}
+#heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: coral;
+}
+#heading2{
+    font-weight: bold;
+    font-size: 35px;
+    color: coral;
+    text-align: left;
+}
+#subh{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding: 0px 0px 0px 35px;
+}
+#pr1{
+    margin: 10px 40px 10px 35px;
+    font-size: 19px;
+    text-align: justify;
+}
+.geninfo{
+    margin: 10px auto;
+    font-size: 19px;
+    font-weight: bold;
+}
+.email{
+    font-weight: normal;
+    font-size: 19px;
+    cursor: pointer;
+}
+.email:link{
+    color: coral
+}
+.email:hover{
+    color: lightgreen
+}
+.perinfo{
+    margin: 10px 40px 10px 0px;
+    font-size: 19px;
+    text-align: justify;
+}

@@ -1,0 +1,54 @@
+/* draft css sheet*/
+
+/* format */
+h1,h2,h3,h4,text,p,text2{
+    font-family: "Red Hat Display";
+    margin:0;
+}
+h1{
+    font-size: 30px;
+    color: coral;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+.text{
+    margin: 50px;
+    font-size: 20px;
+    color: black;
+}
+.text2{
+    font-size: 25px;
+    text-decoration: underline;
+    margin:50px;
+    color: black;
+}
+
+/* font color palette */
+.lighcoral{ color:rgb(240, 128, 128) }
+.salmon{color:rgb(250, 128, 114)}
+.darksalmon{color:rgb(233, 150, 122)}
+
+/* #dt {
+    text-decoration: bold; */
+
+/* testing on button and menu */
+/* 
+menu_bar{
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+button{
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+ */
