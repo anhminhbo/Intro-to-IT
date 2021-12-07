@@ -1,4 +1,4 @@
-/* Doanh's layout demo*/
+/* draft css sheet*/
 
 /* format */
 h1,h2,h3,h4,text,p,text2{
@@ -28,7 +28,8 @@ h1{
 .salmon{color:rgb(250, 128, 114)}
 .darksalmon{color:rgb(233, 150, 122)}
 
-
+/* #dt {
+    text-decoration: bold; */
 
 /* testing on button and menu */
 /* 

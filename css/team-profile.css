@@ -1,23 +1,23 @@
 body{
     margin: 5vw;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
 }
 #heading{
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
     color: coral;
 }
 #heading2{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: coral;
 }
 #subh{
-    /* margin-top: 7px;
-    margin-left: 100px; */
     display: inline-block;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 28px;
     font-style: italic;
     color: black;
 }
