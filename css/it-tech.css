@@ -1,6 +1,23 @@
+#font{
+    font-family: 'Markazi Text', serif;
+}
 #heading{
     text-align: center;
     font-weight: bold;
     font-size: 50px;
     color: coral;
+}
+.content{
+    margin: 10px 40px 10px 35px;
+    font-size: 19px;
+    text-align: justify;
+}
+#name{
+    font-weight: bold;
+    font-size: 25px;
+    color: coral;
+    text-align: left;
+}
+h3{
+    text-align: center;
 }
