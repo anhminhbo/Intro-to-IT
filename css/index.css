@@ -34,6 +34,7 @@ body {
   padding-left: 5px;
 }
 
+/* Sidebar header */
 /* space from header to tags */
 #sidebar-container .sidebar-header  {
     margin-bottom: 100px;
@@ -61,6 +62,21 @@ body {
   text-align: center;
 }
 
+/* Sidebar Item */
+#sidebar-container .sidebar-item{
+  background-color: rgba(141, 138, 138, 0.5);
+}
+
+#sidebar-container .sidebar-item:hover{
+  background-color: coral;
+}
+
+#sidebar-container .sidebar-item  a {
+  color: black;
+  font-size: 35px;
+}
+
+/* Game button */
 #game_button{
   margin: 30px;
   border-color: transparent;
@@ -73,16 +89,4 @@ body {
   color: black;
 }
 
-.sidebar-item{
-  background-color: rgba(141, 138, 138, 0.5);
-}
-
-.sidebar-item:hover{
-  background-color: coral;
-}
-
-a{
-  color: black;
-  font-size: 35px;
-}
 
