@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bouncing Ball</title>
-    <style>
-      canvas {
-        float: left;
-      }
-    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap"
+    rel="stylesheet"
+      />
+    <link rel="stylesheet" href="../../css/game.css" />
+
     <link rel="stylesheet" href="../../css/index.css" />
   </head>
   <body>
@@ -57,7 +61,7 @@
     <script type="text/javascript" src="../../js/screen/screen.js"></script>
     <script type="text/javascript" src="../../js/paddle/paddle.js"></script>
     <script type="text/javascript" src="../../js/ball/ball.js"></script>
-    <div class="instruction">
+    <div id="instruction">
       <h2>Bouncing Pong</h3>
       <p> You get 1 point with each bounce, you lost when drop the ball.</p>
       <p> The game difficulty will increase by 1 if it sees that you're so PRO, maximum 6 levels.</p>
