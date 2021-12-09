@@ -13,10 +13,9 @@
     text-align: justify;
 }
 #name{
+    margin: 10px auto;
+    font-size: 28px;
     font-weight: bold;
-    font-size: 25px;
-    color: coral;
-    text-align: left;
 }
 h3{
     text-align: center;

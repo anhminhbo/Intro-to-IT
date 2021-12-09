@@ -19,7 +19,7 @@ body {
 /* Sidebar */
 #sidebar-container {
   height: 100%;
-  flex: 1.4;
+  flex: 1.6;
   /* margin-left: 10px; */
 }
 
@@ -99,4 +99,30 @@ body {
   margin: 8px 100px;
   padding-top: 8px;
   opacity: 0.75;
+}
+
+#heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: coral;
+  margin-top:10px;
+}
+
+.Link{
+  font-weight: normal;
+  cursor: pointer;
+  color: coral;
+}
+.Link:link{
+  color: coral;
+}
+.Link:hover{
+  color: lightgreen;
+}
+#heading2{
+  font-weight: bold;
+  font-size: 35px;
+  color: coral;
+  text-align: left;
 }
