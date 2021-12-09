@@ -9,3 +9,7 @@ p {
   text-align: justify;
   padding-left: 10px;
 }
+#toolli{
+  list-style-type: disc;
+  font-size: 23px;
+}

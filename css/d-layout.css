@@ -25,20 +25,28 @@ h1{
 
 .format{
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right:100px;
+    margin-left: 35px;
 }
 .format2{
     margin-left: 70px;
     margin-right: 70px;
 }
+dl{
+    margin-top: 10px;
+}
+dd{
+    margin-left: 35px;
+    margin-right: 40px;
+    font-size: 23px;
+    text-align: justify;
+}
 
-p{
+/* p{
     font-size: 25px;
     color: coral;
     font-weight: 700;
     text-decoration: underline;
-}
+} */
 
 /* font color palette */
 .lighcoral{ color:rgb(240, 128, 128) }
