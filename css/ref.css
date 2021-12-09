@@ -16,7 +16,7 @@ li{
     list-style-type: none;
     font-family: 'Markazi Text', sans-serif;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
 }
 li::before{
     content: "[" counter(chapter) "]: ";

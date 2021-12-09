@@ -97,6 +97,7 @@ body {
   font-size: 15px;
   border-top: 1px solid black;
   margin: 8px 100px;
+  margin-bottom: 12px;
   padding-top: 8px;
   opacity: 0.75;
 }
@@ -125,4 +126,9 @@ body {
   font-size: 35px;
   color: coral;
   text-align: left;
+}
+.geninfo{
+  margin: 10px auto;
+  font-size: 28px;
+  font-weight: bold;
 }
