@@ -102,6 +102,13 @@ body {
   opacity: 0.75;
 }
 
+/* Declarations */
+#declarations {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+
 #heading{
   text-align: center;
   font-weight: bold;
