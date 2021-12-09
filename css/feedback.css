@@ -12,3 +12,14 @@ h4 {
 div {
   text-align: justify;
 }
+
+.ind{
+  margin-left: 35px;
+}
+
+.para{
+  margin-left: 35px;
+  margin-right: 40px;
+  font-size: 23px;
+  text-align: justify;
+}
