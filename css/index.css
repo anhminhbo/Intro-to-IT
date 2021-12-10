@@ -20,7 +20,7 @@ body {
 #sidebar-container {
   height: 100%;
   flex: 1.6;
-  /* margin-left: 10px; */
+
 }
 
 #sidebar-container a {
@@ -55,6 +55,7 @@ body {
   flex: 10;
   text-align: justify;
   overflow: auto;
+  display: grid;
 }
 
 #content header h1 {
@@ -100,46 +101,46 @@ body {
   margin-bottom: 12px;
   padding-top: 8px;
   opacity: 0.75;
+  height: 5%;
 }
 
 /* Declarations */
 #declarations {
   text-align: center;
   margin-left: 40px;
-  margin-top: 150px;
 }
 
-#heading{
+#heading {
   text-align: center;
   font-weight: bold;
   font-size: 50px;
   color: coral;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
-.Link{
+.Link {
   font-weight: normal;
   cursor: pointer;
   color: coral;
 }
-.Link:link{
+.Link:link {
   color: coral;
 }
-.Link:hover{
+.Link:hover {
   color: lightgreen;
 }
-#heading2{
+#heading2 {
   font-weight: bold;
   font-size: 35px;
   color: coral;
   text-align: left;
 }
-.geninfo{
+.geninfo {
   margin: 10px auto;
   font-size: 28px;
   font-weight: bold;
 }
-.left{
+.left {
   border-right: 1px solid;
   display: inline-table;
   float: left;
@@ -148,15 +149,15 @@ body {
   padding: 20px 20px 20px 0px;
   text-align: right;
 }
-.right{
+.right {
   display: inline-table;
   margin-right: 13vw;
   padding: 0px 20px 20px 0px;
 }
-#hd3{
+#hd3 {
   color: coral;
   font-size: 2.5vw;
 }
-.text{
+.text {
   font-size: 1.7vw;
 }

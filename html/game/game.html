@@ -56,25 +56,29 @@
 
   <!-- Content -->
   <!-- put the content of the document here -->
-  <section id="content">
-    <div id="heading">Our game</div>
-    <canvas id="gameScreen" width="800" height="800"></canvas>
+  <section id="content" >
+    <div class="game-content">
+      <div id="heading">Our game</div>
+      <canvas id="gameScreen" width="800" height="800"></canvas>
+      <div id="instruction">
+        <h2>Bouncing Pong</h3>
+          <p> You get 1 point with each bounce, you lost when drop the ball.</p>
+          <p> The game difficulty will increase by 1 if it sees that you're so PRO, maximum 6 levels.</p>
+          <p> Good luck and Happy Bouncing !!</p>
+          <h3>Instruction:</h3>
+          <p>press &rarr; on your keyboard to make paddle go right.</p>
+          <p>press &larr; on your keyboard to make paddle go left.</p>
+          <h3 id="point">Point : 0</h3>
+  
+      </div>
+    </div>
+
     <script type="text/javascript" src="../../js/screen/screen.js"></script>
     <script type="text/javascript" src="../../js/paddle/paddle.js"></script>
     <script type="text/javascript" src="../../js/ball/ball.js"></script>
-    <div id="instruction">
-      <h2>Bouncing Pong</h3>
-        <p> You get 1 point with each bounce, you lost when drop the ball.</p>
-        <p> The game difficulty will increase by 1 if it sees that you're so PRO, maximum 6 levels.</p>
-        <p> Good luck and Happy Bouncing !!</p>
-        <h3>Instruction:</h3>
-        <p>press &rarr; on your keyboard to make paddle go right.</p>
-        <p>press &larr; on your keyboard to make paddle go left.</p>
-        <h3 id="point">Point : 0</h3>
-        <footer id="footer"> 
-          Copyright © 2021 MKDK - RMIT University  
-          </footer>
-    </div>
+    <footer id="footer"> 
+      Copyright © 2021 MKDK - RMIT University  
+      </footer>
     <script type="text/javascript" src="../../js/game/game.js"></script>
   </section>
   
