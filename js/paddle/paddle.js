@@ -1,5 +1,5 @@
 // Initialize paddle properties
-const PADDLE_WIDTH = 150;
+const PADDLE_WIDTH = 120;
 const PADDLE_HEIGHT = 40;
 const PADDLE_MARGIN_BOTTOM = 50; // difference from paddle to bottom of game screen
 const PADDLE_SPEED = 20;
@@ -49,15 +49,18 @@ class Rectangular {
     // handle case when rectangular reach the right screen
     if (rightArrow && this.x + this.width < cvs.width) this.x += this.speed;
 
+
     // whenever leftArrow true -> move the rectangular to the left
     // handle case when rectangular reach the left screen
     if (leftArrow && this.x > 0) this.x -= this.speed;
+  
   }
 }
 
 // Initialize Paddle obj
 const Paddle = new Rectangular(
-  cvs.width / 2 - PADDLE_WIDTH / 2,
+  // Have to +20px for the collison -> still dont know why?
+  cvs.width / 2 - PADDLE_WIDTH / 2 + 20,
   cvs.height - PADDLE_HEIGHT - PADDLE_MARGIN_BOTTOM,
   PADDLE_WIDTH,
   PADDLE_HEIGHT,
