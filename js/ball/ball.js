@@ -66,12 +66,18 @@ const ballCollisonWall = () => {
   //   if (Ball.y + Ball.radius > cvs.height) resetBall();
 
   // For rectangular:
-  // Right wall or Left wall
-  if (Ball.x + Ball.radius > cvs.width || Ball.x < 0) {
+  // Right wall
+  if (Ball.x + Ball.radius > cvs.width) {
     updatePoint();
+    Ball.x = cvs.width - Ball.radius;
     Ball.dx = -Ball.dx;
   }
 
+  // Left wall
+  if (Ball.x < 0) {
+    Ball.x = 0;
+    Ball.dx = -Ball.dx;
+  }
   // Top wall
   if (Ball.y < 0) {
     updatePoint();
@@ -89,21 +95,18 @@ const ballCollisonPaddle = () => {
   // The ball need to hit the Paddle Width or Paddle Height
   if (
     // Hit Paddle width --> Paddle.x  <= Ball.x  <= Paddle.x + Paddle.width
-    Ball.x >= Paddle.x &&
+    Ball.x + Ball.radius >= Paddle.x &&
     Ball.x <= Paddle.x + Paddle.width &&
-    // Hit Paddle height --> Paddle. y <= Ball.y + Ball.radius
-    // Ball.y <= Paddle.y + Paddle.height
-    Ball.y + Ball.radius >= Paddle.y &&
-    Ball.y <= Paddle.y + Paddle.height
+    // Hit Paddle height -->Ball.y + Ball.radius >= Paddle.y
+    
+    Ball.y + Ball.radius >= Paddle.y
 
-    // // left of Paddle: Ball.x + radius <= Paddle.x
-    // Ball.x + Ball.radius > Paddle.x &&
-    // // Right of Paddle: Ball.x - radius >= Paddle.x + Paddle. width
-    // Ball.x - Ball.radius < Paddle.x + Paddle.width
+
   ) {
     // let collidePoint to be 0 and then divided by Paddle.width/2
     // to make collidePoint go between -1 to 1
-    let collidePoint = Ball.x - (Paddle.x + Paddle.width / 2);
+
+    let collidePoint = Ball.x + Ball.radius / 2 - (Paddle.x + Paddle.width / 2);
     collidePoint = collidePoint / (Paddle.width / 2);
 
     // MathPi/3 is 60 degree
@@ -113,7 +116,6 @@ const ballCollisonPaddle = () => {
     Ball.dx = Ball.speed * Math.sin(angle);
     Ball.dy = -Ball.speed * Math.cos(angle); // Need to take negative to make right movement
 
-    updatePoint();
   }
 };
 

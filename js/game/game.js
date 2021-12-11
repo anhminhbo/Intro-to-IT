@@ -5,6 +5,7 @@ const Point = document.getElementById("point");
 
 // Game Loop
 const gameLoop = () => {
+
   // Render the bg screen whenever the game animation restart and update
   // update game level
   updateGameLevel();
