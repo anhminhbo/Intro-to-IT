@@ -75,6 +75,7 @@ const ballCollisonWall = () => {
 
   // Left wall
   if (Ball.x < 0) {
+    updatePoint();
     Ball.x = 0;
     Ball.dx = -Ball.dx;
   }

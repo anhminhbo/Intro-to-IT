@@ -59,6 +59,12 @@
   <section id="content" >
     <div class="game-content">
       <div id="heading">Our game</div>
+      <div id="gameover">
+        <div id="gameover-text">Good Job &#128526;</div>
+        <div id="gameover-yourscore">Your score</div>
+        <div id="gameover-score">0</div>
+        <div id="gameover-playagain">Play Again</div>
+      </div>
       <canvas id="gameScreen" width="800" height="800"></canvas>
       <div id="instruction">
         <h2>Bouncing Pong</h3>
@@ -68,14 +74,19 @@
           <h3>Instruction:</h3>
           <p>press &rarr; on your keyboard to make paddle go right.</p>
           <p>press &larr; on your keyboard to make paddle go left.</p>
-          <h3 id="point">Point : 0</h3>
   
       </div>
     </div>
 
+    <!-- Set up Screen -->
     <script type="text/javascript" src="../../js/screen/screen.js"></script>
+    <!-- Set up Paddle and Ball -->
     <script type="text/javascript" src="../../js/paddle/paddle.js"></script>
     <script type="text/javascript" src="../../js/ball/ball.js"></script>
+
+    <!-- Set up Features -->
+    <script type="text/javascript" src="../../js/features/score.js"></script>
+
     <footer id="footer"> 
       Copyright © 2021 MKDK - RMIT University  
       </footer>

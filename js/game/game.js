@@ -1,11 +1,7 @@
 var gameOver = false;
-var point = 0;
-
-const Point = document.getElementById("point");
 
 // Game Loop
 const gameLoop = () => {
-
   // Render the bg screen whenever the game animation restart and update
   // update game level
   updateGameLevel();
@@ -16,6 +12,9 @@ const gameLoop = () => {
   // Render bg image
   ctx.drawImage(BG_IMG, 0, 0); // img already fit screen so set dx dy to 0
 
+  // draw Features
+  drawFeatures();
+
   //  draw Obj
   drawObj();
 
@@ -25,10 +24,15 @@ const gameLoop = () => {
   // Create game loop if the game is not over
   if (!gameOver) requestAnimationFrame(gameLoop);
   else {
-    alert(`You lost. Total Bouncing Point you get is ${point}.`);
-    location.reload(); // reload the page after lost
+    showGameOver();
   }
 };
+
+// Create function to update Features
+const drawFeatures = () => {
+  ShowGameStats(score, 55, 35, SCORE_IMG, 5, 5);
+};
+
 
 // Create function to draw Obj
 const drawObj = () => {
@@ -55,47 +59,58 @@ const gameUpdateObjPosition = () => {
 
 // create function update Point
 const updatePoint = () => {
-  point++;
-  Point.textContent = `Point : ${point}`;
+  score++;
 };
 
 // update game level: 6 levels
 const updateGameLevel = () => {
   // Level 1
-  if (point >= 10 && point <= 20) {
-    Paddle.speed = 17;
+  if (score >= 10 && score <= 20) {
     Ball.speed = 7;
   }
 
   // Level 2
-  if (point > 20 && point <= 30) {
-    Paddle.speed = 14;
+  if (score > 20 && score <= 30) {
+
     Ball.speed = 9;
   }
 
   // Level 3
-  if (point > 30 && point <= 40) {
-    Paddle.speed = 11;
+  if (score > 30 && score <= 40) {
     Ball.speed = 11;
   }
 
   // Level 4
-  if (point > 40 && point <= 50) {
-    Paddle.speed = 8;
+  if (score > 40 && score <= 50) {
     Ball.speed = 13;
   }
 
   // Level 5
-  if (point > 50 && point <= 60) {
-    Paddle.speed = 7;
+  if (score > 50 && score <= 60) {
     Ball.speed = 15;
   }
 
   // Level 6
-  if (point > 60) {
-    Paddle.speed = 5;
+  if (score > 60) {
     Ball.speed = 17;
   }
 };
+
+// create Function to show GameOver
+const showGameOver = () => {
+  // Show score
+  Score.innerHTML = score;
+
+
+  // Reload the game
+  const playAgain = document.getElementById("gameover-playagain");
+  playAgain.addEventListener('click',() => {
+      location.reload();
+  })
+
+  // Display the game over block
+  const displayGameOver = document.getElementById("gameover");
+  displayGameOver.style.display = 'block';
+}
 
 gameLoop();
