@@ -9,7 +9,7 @@ canvas {
 .game-content #gameover {
   background-color: red;
   top: 40%;
-  left: 40%;
+  left: 34%;
   width: 10%;
   display: none;
   position: absolute;
