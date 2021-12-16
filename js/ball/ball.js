@@ -68,6 +68,7 @@ const ballCollisonWall = () => {
   // For rectangular:
   // Right wall
   if (Ball.x + Ball.radius > cvs.width) {
+    BALL_HIT_WALL_SOUND.play();
     updatePoint();
     Ball.x = cvs.width - Ball.radius;
     Ball.dx = -Ball.dx;
@@ -75,18 +76,21 @@ const ballCollisonWall = () => {
 
   // Left wall
   if (Ball.x < 0) {
+    BALL_HIT_WALL_SOUND.play();
     updatePoint();
     Ball.x = 0;
     Ball.dx = -Ball.dx;
   }
   // Top wall
   if (Ball.y < 0) {
+    BALL_HIT_WALL_SOUND.play();
     updatePoint();
     Ball.dy = -Ball.dy;
   }
 
   // Bottom wall
   if (Ball.y + Ball.radius > cvs.height) {
+    GAME_OVER_SOUND.play();
     gameOver = true;
   }
 };
@@ -99,13 +103,13 @@ const ballCollisonPaddle = () => {
     Ball.x + Ball.radius >= Paddle.x &&
     Ball.x <= Paddle.x + Paddle.width &&
     // Hit Paddle height -->Ball.y + Ball.radius >= Paddle.y
-    
+
     Ball.y + Ball.radius >= Paddle.y
-
-
   ) {
     // let collidePoint to be 0 and then divided by Paddle.width/2
     // to make collidePoint go between -1 to 1
+    BALL_HIT_PADDLE_SOUND.play();
+    // BALL_HIT_PADDLE_SOUND.volume = 0.1;
 
     let collidePoint = Ball.x + Ball.radius / 2 - (Paddle.x + Paddle.width / 2);
     collidePoint = collidePoint / (Paddle.width / 2);
@@ -116,7 +120,6 @@ const ballCollisonPaddle = () => {
     // Calculate the movement of the Ball
     Ball.dx = Ball.speed * Math.sin(angle);
     Ball.dy = -Ball.speed * Math.cos(angle); // Need to take negative to make right movement
-
   }
 };
 

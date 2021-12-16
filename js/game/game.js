@@ -105,12 +105,23 @@ const showGameOver = () => {
   // Reload the game
   const playAgain = document.getElementById("gameover-playagain");
   playAgain.addEventListener('click',() => {
-      location.reload();
+      playAgainSound = new Audio;
+      playAgainSound.src = '../../sound/gameover.mp3';
+      playAgainSound.play();
+      playAgainSound.volume = 0.2;
+      setTimeout( () => {
+        location.reload();
+      }
+      ,1000);
+    
   })
 
   // Display the game over block
   const displayGameOver = document.getElementById("gameover");
   displayGameOver.style.display = 'block';
+
+
+
 }
 
 gameLoop();
